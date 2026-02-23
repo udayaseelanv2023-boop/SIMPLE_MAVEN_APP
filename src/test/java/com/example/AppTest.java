@@ -1,23 +1,10 @@
-// File: src/test/java/com/example/AppTest.java
 package com.example;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class AppTest {
-
-    @Test
-    public void testAdd() {
-        // Arrange
-        App app = new App();
-        int a = 10;
-        int b = 20;
-        int expectedSum = 30;
-
-        // Act
-        int actualSum = app.add(a, b);
-
-        // Assert
-        assertEquals(expectedSum, actualSum, "10 + 20 should be 30");
-    }
+@Test
+public void testAdd() {
+App app = new App();
+assertEquals(5, app.add(2, 3));
+}
 }
